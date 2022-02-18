@@ -1,3 +1,6 @@
+####------Create S3 Bucket-----####
+#---------------------------------#
+
 #!/bin/bash
 
 aws s3api list-buckets
