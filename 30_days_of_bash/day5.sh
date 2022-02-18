@@ -1,6 +1,7 @@
 ####------Start and Stop an Apache server-----#####
 #-------------------------------------------------#
 
+#!/bin/bash
 
 echo "Please provide specific path: "
 read FILEPATH
