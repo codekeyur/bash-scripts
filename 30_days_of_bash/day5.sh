@@ -1,26 +1,4 @@
-####------Start and Stop an Apache server-----#####
-#-------------------------------------------------#
-
 #!/bin/bash
-
-echo "Please provide specific path: "
-read FILEPATH
-
-if [[ -e $FILEPATH ]] 
-then 
-   echo "${FILEPATH} exist, checking files and its permission in it."
-   files=`ls $FILEPATH`
-   echo $files
-   for file in $files
-   do 
-     if [[ -f $file  && -x $file ]]
-     then 
-         echo "$file -- Does have permission. "
-     else 
-         echo "$file -- No execute permission."
-     fi
-   done
-else#!/bin/bash
 
 echo "-----------------------------"
 echo "----------Select Server------"
@@ -69,5 +47,3 @@ function apache_server () {
 
 apache_server
 
-   echo "Please provide correct file path."
-fi
